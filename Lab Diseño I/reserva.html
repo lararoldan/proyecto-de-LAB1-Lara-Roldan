@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva | Tierra de Azafranes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="text-center mt-4">
+  <a href="index.html" class="btn btn-secondary">Volver</a>
+</div>
+<!-- SECCIÓN RESERVAS -->
+<section id="reserva" class="container my-5">
+  <body style="background: url('img/fr1.png') center/cover no-repeat fixed;">
+
+  <h2 class="text-center mb-4">Reservá tu mesa</h2>
+
+  <form action="mailto:tierraazafranes@mail.com" method="post" id="formReserva" class="row g-3">
+
+    <div class="col-md-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="text" id="apellido" name="apellido" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="fecha" class="form-label">Fecha</label>
+      <input type="date" id="fecha" name="fecha" class="form-control" required>
+    </div>
+
+    <div class="col-md-6">
+      <label for="hora" class="form-label">Hora</label>
+      <input type="time" id="hora" name="hora" class="form-control" required>
+    </div>
+
+    <div class="col-md-12">
+  <label for="personas" class="form-label">Cantidad de personas</label>
+  <input type="number" id="personas" name="personas" class="form-control" min="1" max="40" placeholder="Ej: 4" required>
+</div>
+
+    <div class="col-md-12">
+      <label for="comentarios" class="form-label">Comentarios</label>
+      <textarea id="comentarios" name="comentarios" class="form-control" rows="3" placeholder="Ej: preferencia de ubicación o alergias"></textarea>
+    </div>
+
+    <div class="col-12 text-center">
+      <button type="submit" class="btn btn-warning px-4">Enviar reserva</button>
+    </div>
+
+  </form>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Esperar que el DOM cargue
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("formReserva");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // evita que se recargue la página
+
+      // Oculta el formulario
+      form.style.display = "none";
+
+      // Crea un mensaje de confirmación
+      const mensaje = document.createElement("div");
+      mensaje.className = "text-center mt-5";
+      mensaje.innerHTML = `
+        <h3 class="text-success">¡Muchas gracias por hacer su reserva!</h3>
+        <p>Los esperamos en Tierra de Azafranes.</p>
+        <a href="index.html" class="btn btn-warning mt-3">Volver al inicio</a>
+      `;
+
+      // Agrega el mensaje al mismo lugar donde estaba el formulario
+      form.parentNode.insertBefore(mensaje, form);
+    });
+  });
+</script>
+
+</body>
+</html>

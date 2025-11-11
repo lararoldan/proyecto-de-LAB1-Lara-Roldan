@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html lang="español"> <!--Atrivutos en el inicio idioma español o ingles--> 
+  <head> <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css"> <!--ICONOS PARA EL FOOTER-->
+    </head> 
+
+    <body> 
+      <!--sintaxis HTML <INICIO-TAG atributo="valor PRIMINCIPIO DE ANIDACIÓN <tag1> <tag2> <tag3> </tag3> </tag2> </tag1> "--> 
+       <!-- NAVBAR -->
+<header> 
+      <nav class="navbar navbar-expand-lg bg-light navbar-light"> 
+        <div class="container-fluid"> 
+          <!-- Nombre del restaurante --> 
+          <a class="navbar-brand" href="#"> 
+            <img src="img/logo.JPG" 
+            alt="Tierra de Azafranes" 
+            width="120">
+           </a> 
+     <!-- Botón hamburguesa (móvil) --> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+        <span class="navbar-toggler-icon"></span> </button> 
+        <!-- Enlaces del menú --> 
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"> 
+             <a class="nav-link active" href="historia.html">Historia</a></li>
+            <li class="nav-item"> 
+             <a class="nav-link active" href="menu.html">Menú</a></li>
+            <li class="nav-item"> 
+             <a class="nav-link active" href="galeria.html">Galería</a></li>
+           <!---<li class="nav-item"><a class="nav-link" href="#">Experiencias</a></li> 
+                <li class="nav-item"> -->
+                <a href="reserva.html" class="btn btn-warning text-white">Reserva</a> </li> 
+              </ul> </div> </div> </nav> </header>
+
+     <!--INICIO TIERRA--> 
+     <!--<section class="hero">
+  <div class="hero-content">
+    <h1>TIERRA DE AZAFRANES</h1>
+    <p>
+      Una experiencia gastronómica única en el corazón de Tandil, donde cada plato cuenta una historia de tradición y sabor.
+    </p>
+    <a href="#" class="btn">CONOCÉ MÁS</a>
+  </div>
+</section>-->
+<!--<section class="hero">
+  <div class="hero-content">
+    <h2>TIERRA DE AZAFRANES</h2>
+    <p>tecutr iuds uhda uff riaa ru saudh dua da rybdifbiru dsyiuer udisfgys ysyf ydfbyd ydy yd dy...</p>
+    <button class="btn-conoce">CONOCE MÁS</button>
+  </div>
+</section>-->
+<section class="hero">
+  <div class="hero-content">
+    <h2>TIERRA DE AZAFRANES</h2>
+    <p>
+      Una experiencia gastronómica única en el corazón de Tandil, donde cada plato cuenta una historia de tradición y sabor.
+    </p>
+    <a href="https://www.instagram.com/tierradeazafranes/" target="_blank" class="btn-conoce">CONOCÉ MÁS</a>
+  </div>
+</section>
+<!-- TIRA CONTINUA DE IMÁGENES (reemplaza el carousel anterior) -->
+<section class="strip-slider py-4">
+  <div class="slider-window">
+    <div class="slider-track">
+      <!-- conjunto original -->
+      <div class="slide"><img src="img/carrusel1.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel2.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel3.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel4.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel5.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel6.jpg" alt=""></div>
+
+      <!-- repetimos el mismo conjunto para lograr loop perfecto -->
+      <div class="slide"><img src="img/carrusel1.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel2.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel3.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel4.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel5.jpg" alt=""></div>
+      <div class="slide"><img src="img/carrusel6.jpg" alt=""></div>
+    </div>
+  </div>
+</section>
+
+
+<!--EXCLUSIVOS-->
+<section class="hero hero-right">
+<div class="hero-content-right">
+<h2>EXCLUSIVOS</h2>
+<p>
+Domingos y lunes, a la noche picada de mariscos.<br>
+Jueves a la noche degustación de pastas.
+</p>
+<a href="reserva.html" class="btn-conoce">RESERVA</a>
+</div>
+</section>
+
+<!-- TIRA -->
+<section class="tira-continua">
+  <div class="tira-slider">
+    <div class="tira-track">
+      <div class="tira"><img src="img/separador.png" alt="Patrón decorativo"></div>
+      <div class="tira"><img src="img/separador.png" alt="Patrón decorativo repetido"></div>
+    </div>
+  </div>
+</section>
+
+  <!--DEGUSTACIONES-->
+<section class="hero hero-left">
+<div class="hero-content-left">
+<h2>DEGUSTACIONES</h2>
+<p>
+Hacemos degustaciones de vino con las mejores bodegas y la guía de expertos en el tema.
+Seguinos en Instagram para enterarte de la próxima fecha.</p>
+<a href="https://www.instagram.com/tierradeazafranes/"
+target="_blank"
+class="btn-conoce">CONOCÉ MÁS</a>
+</div>
+</section>
+
+<!-- TIRA -->
+<section class="tira-continua">
+  <div class="tira-slider">
+    <div class="tira-track">
+      <div class="tira"><img src="img/separador.png" alt="Patrón decorativo"></div>
+      <div class="tira"><img src="img/separador.png" alt="Patrón decorativo repetido"></div>
+    </div>
+  </div>
+</section>
+
+<!--HISTORIA-->
+<section class="hero hero--bottom-center" style="background-color: black;">
+  <div class="hero-content">
+    <h2>NUESTRA HISTORIA</h2>
+    <p>Desde 2009, creando momentos únicos a través del sabor y la pasión por la cocina.</p>
+    <a href="historia.html" class="btn-cta-dark">CONOCENOS</a>
+  </div>
+</section>
+
+
+<!--TIENDA-->
+<section class="productos py-5 text-center">
+<div class="container">
+<h3>NUESTROS PRODUCTOS</h3>
+
+<div class="row justify-content-center">
+<!-- Producto 1 -->
+<div class="col-md-4 mb-4">
+<div class="card producto-card shadow-sm">
+<img src="img/vin.jpg" class="card-img-top" alt="Vino Tierra de Azafranes">
+<div class="card-body bg-light">
+<h6 class="text-uppercase text-muted">La Tienda</h6>
+<h5 class="card-title">Vino Tierra de Azafranes</h5>
+<p class="card-text mb-1">Por unidad</p>
+<p class="precio fw-bold">$15.000</p>
+</div>
+</div>
+</div>
+
+<!-- Producto 2 -->
+<div class="col-md-4 mb-4">
+<div class="card producto-card shadow-sm">
+<img src="img/vin.jpg" class="card-img-top" alt="Vino Tierra de Azafranes">
+<div class="card-body bg-light">
+<h6 class="text-uppercase text-muted">La Tienda</h6>
+<h5 class="card-title">Vino Tierra de Azafranes</h5>
+<p class="card-text mb-1">Por unidad</p>
+<p class="precio fw-bold">$15.000</p>
+</div>
+</div>
+</div>
+
+<!-- Producto 3 -->
+<div class="col-md-4 mb-4">
+<div class="card producto-card shadow-sm">
+<img src="img/vin.jpg" class="card-img-top" alt="Vino Tierra de Azafranes">
+<div class="card-body bg-light">
+<h6 class="text-uppercase text-muted">La Tienda</h6>
+<h5 class="card-title">Vino Tierra de Azafranes</h5>
+<p class="card-text mb-1">Por unidad</p>
+<p class="precio fw-bold">$15.000</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Call to Action -->
+<div class="mt-4">
+  <p>Conocé todos nuestros productos en</p>
+  <a href="https://www.latiendadeazafranes.com.ar/" target="_blank" class="btn-cta-light">
+    LA TIENDA
+  </a>
+</div>
+
+<!-- BUSCAS ALGO PERSONALIZADO, CONTACTO WHATSAPP -->
+<section class="seccion-personalizada bg-white py-5">
+  <div class="container-fluid bg-dark text-white text-center py-5 rounded-3">
+    <h3 class="mb-3">¿Buscás algo personalizado?</h3>
+    <p class="mb-4 px-3">
+      Creamos experiencias únicas para eventos especiales, celebraciones privadas y grupos corporativos.
+    </p>
+    <a 
+      href="https://wa.me/5492494499446" 
+      target="_blank" 
+      class="btn-tienda">
+      ESCRIBINOS
+    </a>
+  </div>
+</section>
+   <!--FOOTER-->
+<footer class="site-footer">
+  <div class="container-fluid">
+    <div class="row gy-4">
+
+      <!-- Col 1: logo + descripción + redes -->
+      <div class="col-md-4">
+        <img src="img/logo.JPG" alt="Tierra de Azafranes - logo" class="footer-logo mb-3" style="max-width:180px;">
+        <p class="footer-desc">
+          Una experiencia gastronómica única en el corazón de Tandil. Cada plato cuenta una historia de tradición y sabor.
+        </p>
+        <div class="social d-flex gap-3 mt-3">
+          <a href="https://www.facebook.com/tierradeazafranestandil/photos?locale=es_LA" target="_blank" class="text-black" aria-label="Facebook">
+            <i class="bi bi-facebook fs-4"></i>
+          </a>
+          <a href="https://www.instagram.com/tierradeazafranes/" target="_blank" class="text-black" aria-label="Instagram">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+          <a href="https://www.tripadvisor.com.ar/Restaurant_Review-g312761-d3157883-Reviews-Tierra_de_Azafranes-Tandil_Province_of_Buenos_Aires_Central_Argentina.html" class="text-black" aria-label="Tripadvisor">
+            <i class="bi bi-award fs-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: horarios + CTA reserva -->
+      <div class="col-md-4 text-center">
+        <h5 class="mb-3">Horarios</h5>
+        <p class="mb-3">Miércoles a Lunes: 12:00–15:00 • 20:30–00:00</p>
+        <a href="reserva.html" class="btn btn-outline-dark rounded-pill px-4 py-2">Reservar</a>
+
+        <div class="contact mt-4">
+          <h6 class="mt-3">Contacto</h6>
+          <p class="mb-1"><i class="bi bi-telephone-fill me-2"></i>+54 249 444-5555</p>
+          <p class="mb-0"><i class="bi bi-envelope-fill me-2"></i>reservas@tierradeazafranes.com</p>
+        </div>
+      </div>
+
+      <!-- Col 3: newsletter + links legales -->
+      <div class="col-md-4">
+        <h5 class="mb-3">Newsletter</h5>
+        <p class="small text-muted">Suscribite para recibir noticias sobre eventos y nuevos menús.</p>
+
+        <form id="footer-newsletter" class="d-flex gap-2" action="#" onsubmit="return false;">
+          <input type="email" class="form-control rounded-pill" placeholder="Tu email" aria-label="Correo" required>
+          <button class="btn btn-dark rounded-pill px-3" type="submit">OK</button>
+        </form>
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <div class="row">
+      <div class="col-md-6">
+        <p class="mb-0 small">© 2025 Tierra de Azafranes. Todos los derechos reservados.</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p class="mb-0 small">Desarrollado por <strong>Lara Roldan</strong> — Universidad de Palermo</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
